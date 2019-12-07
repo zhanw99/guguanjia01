@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/guguanjia/">
+    <meta charset="UTF-8">
+    <title>富文本编辑器使用示例</title>
+    <!--jq-->
+    <script src="static/jquery/jquery.js"></script>
+    <!--vue-->
+    <script src="static/vue/axios.js"></script>
+    <script src="static/vue/vue.js"></script>
+    <!--富文本编辑器-->
+    <script src="static/ueditor/ueditor.all.js"></script>
+    <script src="static/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="static/ueditor/ueditor.config.js"></script>
+    <!--vue整合富文本编辑器插件-->
+    <script src="static/js/vue-ueditor-wrap.min.js"></script>
+
+
+</head>
+<body>
+<!--一、前端配置
+1.相关js文件和富文本编辑器配置js文件
+二、后端配置-->
+        <div id="app">
+            <vue-ueditor-wrap v-model="msg" :config="myconfig"></vue-ueditor-wrap>
+        </div>
+
+</body>
+<script src="static/js/statute/index.js"></script>
+</html>
