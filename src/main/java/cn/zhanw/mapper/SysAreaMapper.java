@@ -46,14 +46,14 @@ public interface SysAreaMapper extends Mapper<SysArea> {
      * 根据父区域id查找所有区域
      * @return
      */
-    @Select("select sub.*,parent.name parentName  \n" +
-            "             from  \n" +
-            "             sys_area sub\n" +
-            "            LEFT JOIN  \n" +
-            "            sys_area parent  \n" +
-            "             ON\n" +
-            "            sub.parent_id=parent.id\n" +
-            " where\n" +
+    @Select("select sub.*,parent.name parentName   " +
+            "             from   " +
+            "             sys_area sub " +
+            "            LEFT JOIN   " +
+            "            sys_area parent   " +
+            "             ON " +
+            "            sub.parent_id=parent.id " +
+            " where " +
             " sub.id=#{aid}")
     SysArea selectByAid(long aid);
 

@@ -23,7 +23,8 @@ let le = new Vue({
                 console.log(error)
             })
         },
-    },created:function (){
+    },
+    created:function (){
         this.selectAll();//在vue创建后调用函数返回数据
     }
 });
