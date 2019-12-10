@@ -2,7 +2,6 @@ package cn.zhanw.controller;
 
 import cn.zhanw.entity.Result;
 import cn.zhanw.entity.SysResource;
-import cn.zhanw.entity.SysRole;
 import cn.zhanw.service.SysResourceService;
 import cn.zhanw.service.SysRoleService;
 import cn.zhanw.utils.EncryptUtils;
